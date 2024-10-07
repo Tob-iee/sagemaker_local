@@ -1,0 +1,10 @@
+install Docker
+environment manager ---> pip install pipenv
+install required packages ---> pipenv install boto3 awscli sagemaker scikit-learn pandas joblib
+create an aws sagemaker role
+configure terminal with aws credentials ---> aws configure
+initiate dev environment  ---> pipenv shell
+
+Authenticate your Docker to access the image from ECR ---> aws ecr get-login-password --region af-south-1 | docker login --username AWS --password-stdin 510948584623.dkr.ecr.af-south-1.amazonaws.com
+
+Run training job and model deployment
